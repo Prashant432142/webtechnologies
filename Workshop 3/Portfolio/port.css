@@ -1,0 +1,52 @@
+
+header{
+    background-color: bisque;
+}
+
+#navo{
+    display: inline-block;
+}
+
+#ram{
+    margin: 0 40px;
+    justify-content: center;
+}
+
+#ram:hover{
+    color: red;
+}
+
+body{
+    background-color: aqua;
+}
+
+
+
+#img{
+    margin-left: 43%;
+}
+
+#about{
+    text-align: center;
+}
+
+#bicha{
+    text-align: center;
+}
+
+form{
+    border-radius: 2cm;
+}
+
+dt{
+    font-style: italic;
+}
+
+table{
+    box-align: center;
+}
+
+footer{
+    background-color: rgb(84, 222, 84);
+    text-align: end;
+}
