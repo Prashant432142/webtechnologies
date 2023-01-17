@@ -2,28 +2,41 @@
 body{
     background-color: rgb(31, 113, 13);
     color: white;
+    box-sizing: border-box;
 }
+
+.flex{
+    display: inline-flex ;
+}
+
+.content{
+    flex: 1;
+}
+
+#fig{
+    flex: 1;
+    text-align: right;
+}
+
 h1{
     font-size: 82px; 
     font-family: "Times New Roman",Times,Serif;
-    /* margin: 200px 1000px 100px 100px; */
-    /* for rectangle */
     margin-left: 100px ;
     max-width: 45%;
 }
+
 h2{ 
     margin-top: -30px;
     margin-left: 100px;
     font-size: 30px;
 }
+
 .venue{
     margin-top:100px ;
     margin-left: 100px;
     margin-bottom: -100px;
 }
-nopad{
-    padding-top: -400px;
-}
+
 input{
     margin-left: 100px;
     margin-top: 200px;
@@ -36,14 +49,8 @@ input{
     padding: 20px;
     font-weight: bold;
 }
-#image{
-    text-align: right;
-    margin-top: -850px;
-    /* height: 100%;
-    width: auto; */
-}
+
 img{
-    /* height: 1200px; */
-    height: 855px;
-    width: 50%;
+    height: 40 rem;
+    width: 60rem;
 }

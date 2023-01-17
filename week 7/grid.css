@@ -1,0 +1,28 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /*1fr=1 fraction*/
+    grid-template-rows: repeat(5,1fr);
+    gap: 20px;
+}
+.grid{
+    padding: 15px;
+    background-color: aqua;
+    border: 1px solid;
+    text-align: center;
+    
+}
+.grid-item1{
+    grid-column: span 3;
+    grid-row: span 1;
+}
+.grid-item2{
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.grid-item3{
+    grid-row: span 3;
+}
+.grid-item4{
+    grid-column: span 3;
+}

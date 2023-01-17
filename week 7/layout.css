@@ -1,0 +1,20 @@
+*{
+    border: solid;
+}
+.header{
+    text-align: center;
+}
+.body{
+    display: flex;
+}
+.content{
+    flex: 1;
+    text-align: center;
+}
+.side{
+    flex: 1;
+    text-align: center;
+}
+.footer{
+    text-align: center;
+}
