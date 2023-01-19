@@ -50,9 +50,16 @@ input{
     font-weight: bold;
 }
 
-@media only screen and (max-midth:480px) {
+@media only screen and (max-width:480px) {
     *{
         font-size: 12px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .flex{
+        flex-direction: column-reverse;
+    }
+    img{
+        height: 50vh;
+        width: 50vh;
     }
 }
