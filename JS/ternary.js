@@ -1,0 +1,1 @@
+console.log(`${country} population is ${population>33 ? 'above':'below'} average`,);
