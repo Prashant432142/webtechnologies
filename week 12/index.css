@@ -21,8 +21,7 @@ ul{
 a{
     color: rgb(10, 92, 59);
 
-}
-ul li{
+.navi li{
     display: inline-block;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
