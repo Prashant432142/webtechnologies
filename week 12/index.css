@@ -1,86 +1,56 @@
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-#grid-container{
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(6,1fr);
-}
-
-.item{
-    padding: 15px;
-    background-color: rgb(125, 126, 114);
-    border: none;
-}
-
 .pic{
-    grid-column: span 4;
-    grid-row: span 6;
-    background-color: yellow;
+    justify-items: center;
+    flex: 1;
+    background-color: rgb(98, 45, 45);
+}
+
+button{
+    font-size: 22px;
+    text-decoration: none;
+    color:rgb(0, 255, 106);
+    background-color: red;
+    border:none;
+    font-style: oblique;
 }
 
 img{
-    height: 100%;
-    border-radius: 500px;
-    padding: 10px;
-    border: ridge;
+    width: 200px;
 }
 
 .navi{
-    grid-column: span 6;
-    grid-row: span 6;
-}
-
-.navi ul{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(1,1fr);
+    background-color: red;
 }
 
 .navi li{
     list-style: none;
-    font-weight: bold;
-}
-
-.home{
-    grid-column: span 1;
-}
-
-.about{
-    grid-column: span 1;
-}
-
-.navi a{
-    text-decoration: none;
-    text-align: center;
-    font-size: 32px;
+    display: block;
     padding: 20px;
 }
 
+.navi a{
+    font-size: 22px;
+    text-decoration: none;
+    color:rgb(0, 255, 106)
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flexo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .text{
-    grid-column: span 10;
-    grid-row: span 14;
-    justify-content: space-around;
-    background-color: rgb(255, 121, 144);
-}
-
-.bich{
-    margin-top: 30%;
-}
-
-.bich h1,h2{
-    text-align: center;
-}
-
-.copy{
-    text-align: right;
-    color:rgb(42, 4, 124);
-    font-size: larger;
-    margin-top: -25px;
+    background-color: pink;
+    font-size: 32px;
+    color: aliceblue;
 }
