@@ -1,56 +1,132 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}
-
-.pic{
-    justify-items: center;
-    flex: 1;
-    background-color: rgb(98, 45, 45);
-}
-
-button{
-    font-size: 22px;
-    text-decoration: none;
-    color:rgb(0, 255, 106);
-    background-color: red;
-    border:none;
-    font-style: oblique;
-}
-
-img{
-    width: 200px;
-}
-
-.navi{
-    background-color: red;
-}
-
-.navi li{
-    list-style: none;
-    display: block;
-    padding: 20px;
-}
-
-.navi a{
-    font-size: 22px;
-    text-decoration: none;
-    color:rgb(0, 255, 106)
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .flex-container{
-    display: flex;
+    width: 100vw;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgs/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+.log{
+    text-align: justify;
+    padding: 20px;
+}
+
+.logo{
+    height: 4rem;
 }
 
 .flexo{
-    flex: 1;
     display: flex;
-    flex-direction: column;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1,h2{
+    color: aliceblue;
+}
+
+button{
+    width: 200px;
+    color:rgb(9, 180, 9);
+    font-size: 23px;
+    font-weight: bolder;
+    padding: 12px 0;
+    margin: 20px;
+    margin-left: -10px;
+    background: transparent;
+    border: 2px solid #009688;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover{
+    border: none;
+}
+
+span{
+    background:#02b9a75a;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* z-index: -1; */
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+p{
+    color: aliceblue;
+    line-height: 15px;
 }
 
 .text{
-    background-color: pink;
-    font-size: 32px;
-    color: aliceblue;
+    align-items: center;
+    flex-basis: 50%;
+    cursor:auto;
+    
+}
+
+.h{
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.h::after{
+    content: "";
+    
+}
+
+.cards{
+    width: 250px;
+    height:280px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin:10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.cards:hover{
+    transform: translateY(-10px);
+}
+
+.about{
+    background-image: url(imgs/about.jpg);
+}
+
+.education{
+    background-image: url(imgs/about.jpg);
+}
+
+.hobby{
+    background-image: url(imgs/about.jpg);  
+}
+
+.skill{
+    background-image: url(imgs/about.jpg);
 }
