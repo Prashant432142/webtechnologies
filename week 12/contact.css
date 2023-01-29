@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+Color palette:
+
+#674188: purple
+#C3acd0: fikka purple
+#f7efe5: wheat yellow
+#fffbf5: safead
+
+*/
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background-image:linear-gradient(#C3acd0,#674188);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+}
+.contact{
+    flex-basis: auto;
+    padding-right: 50px;
+}
+
+nav{
+    flex-basis: auto;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+}
+
+button{
+    border: none;
+    background:transparent;
+    margin: 10px;
+    font-size: larger;
+    cursor: pointer;
+    position: relative;
+}
+
+li button::after{
+    background-color: aliceblue;
+    content: "";
+    width: 0;
+    height:3px;
+    position: absolute;
+    left:0;
+    bottom: -3px;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+
+li button:hover::after{
+    width:100%
+}
+
+.bottom{
+    display: flex;
+    height: 100%;
+    flex-direction: row-reverse;
+    
+}
+
+form{
+    flex-basis: 50%;
+    align-self: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.links{
+    display: grid;
+    padding: 30px;
+    width: 100%;
+    place-items: center;
+    align-content: space-between;
+    justify-content: start;
+    position: relative;
+}
+
+.links .link{
+    padding: 20px;
+    position: relative;
+    background:#6741885c;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.links span{
+    position: relative;
+    position: absolute;
+    background: #fff;
+    margin: 0 13px;
+    padding: 2px 3px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.links span::before{
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    left:3px;
+    top: 25%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.links:hover span{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+label{
+    font-weight: bolder;
+}

@@ -7,16 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/78a16de005.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html"><button>Home</button></a></li>
-            <li><a href="about.html"> <button> About </button> </a></li>
-            <li><a href="education.html"><button>Education</button></a></li>
-            <li><a href="hobbies.html"><button>Hobbies</button></a></li>
-            <li><a href="interest.html"><button>Interest</button></a></li>
-            <li><a href="contact.html"><button>Contact me</button></a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <div class="top">
+            <div class="contact">
+                <a href="contact.html">
+                    <button type="button" class="contactbutt">Contact me</button>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><button>Home</button></a></li>
+                    <li><a href="Intro.html"> <button> Introduction </button> </a></li>
+                    <li><a href="education.html"><button>Education</button></a></li>
+                    <li><a href="hobbies.html"><button>Hobbies</button></a></li>
+                    <li><a href="skill.html"><button>Skills</button></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bottom">
+            <form>
+                <label for="Username">Username:</label>
+                <input type="text" placeholder="Enter your username">
+                <br><br>
+                <label for="email">E-mail: &nbsp;&nbsp;&nbsp;&nbsp; </label>
+                <input type="email" placeholder="Email">
+                <br><br>
+                <label for="Message">Message:&nbsp;&nbsp;</label>
+                <textarea name="Message" cols="30" rows="4"></textarea>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div class="links">
+                <div class=" linkedin">
+                    <a href="https://www.linkedin.com/in/prashant-timalsina-76b09025a/" target="_blank" class="link">
+                        <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                    </a>
+                    <span>&nbsp;linkedin/prashant.timalsina</span>
+                </div>
+                <div class="email">
+                    <a href="mailto:np03cs4a220102@herald.edu.np" class="link">
+                        <i class="fa-regular fa-envelope fa-2xl"></i>
+                    </a>
+                    <span>&nbsp;np03cs4a220102@herald.edu.np</span>
+                </div>
+                <div class="git">
+                    <a href="https://github.com/Prashant432142" target="_blank" class="link">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                    <span>&nbsp;Prashant432142</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
