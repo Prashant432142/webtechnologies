@@ -4,20 +4,11 @@
     box-sizing: border-box;
 }
 
-/*
-Color palette:
-
-#674188: purple
-#C3acd0: fikka purple
-#f7efe5: wheat yellow
-#fffbf5: safead
-
-*/
 
 .container{
     width: 100vw;
     min-height: 100vh;
-    background-image:linear-gradient(#C3acd0,#674188);
+    background-image:linear-gradient(#3A606E,#446772,#4D6E76,#577479,#607B7D);
     background-position: center;
     background-size: cover;
     padding: 0 8%;
@@ -104,7 +95,7 @@ form{
 .links .link{
     padding: 20px;
     position: relative;
-    background:#6741885c;
+    background:#4ed7615c;
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
     border-radius: 50%;
     z-index: 2;

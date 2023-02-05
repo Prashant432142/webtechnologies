@@ -12,12 +12,12 @@ body{
 .flex-container{
     width: 100vw;
     height: 100%;
-    background-image:linear-gradient(#C3acd0,#674188);
+    background-image:linear-gradient(#7A8A81,#7A8A81,#3A606E,#7A8A81,#607B7D);
     background-position: center;
     background-size: cover;
     padding: 0 8%;
     box-sizing: border-box;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .log{
@@ -105,7 +105,7 @@ p{
     text-decoration: none;
 }
 
-.cards::after{
+/* .cards::after{
     content: "";
     height: 3px;
     width: 0;
@@ -114,15 +114,15 @@ p{
     bottom: -10;
     left: 0;
     transition: 0.5s;
-}
+} */
 
-.cards:hover::after{
+/* .cards:hover::after{
     width: 100%;
-}
+} */
 
 .cards{
-    width: 15rem;
-    height:18rem;
+    width: 100%;
+    height: 20vh;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
@@ -138,18 +138,18 @@ p{
 }
 
 .about{
-    background-image: url(imgs/about.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(imgs/admin.png);  
 }
 
 .education{
-    background-image: url(imgs/about.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(imgs/graduation.jpg);  
 }
 
 .hobby{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgs/may.jpg);  
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(imgs/wordpress.png);  
 }
 
 .skill{
-    background-image: url(imgs/about.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(imgs/skill.jpg);  
 }
 
